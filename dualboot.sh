@@ -8,7 +8,7 @@ GROUPER="grouper"
 MAGURO="maguro"
 MANTA="manta"
 FLO="flo"
-EXYNOS="exynos"
+I9300="i9300"
 
 # Used version of CWM recovery
 URL_TWRP_PATH_BASE="http://techerrata.com/browse/twrp2/i9300"
@@ -72,9 +72,9 @@ detect_device() {
         echo "Detected connected Nexus 7 - 2013 GSM"
         DEVICE=$FLO
         TWRP_SIZE=9300000
-    elif [[ "$DEVICE" == exynos* ]]; then
+    elif [[ "$DEVICE" == i9300* ]]; then
         echo "Detected connected I9300"
-        DEVICE=$EXYNOS
+        DEVICE=$I9300
     	TWRP_SIZE=6000000
 	else
         echo "Connected device is not supported"
